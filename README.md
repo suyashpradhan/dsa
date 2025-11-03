@@ -1,1 +1,9 @@
-## DSA Questions based on Arrays, String, FP, Async JS, DOM
+## DSA 101
+
+## Module 1
+     - If/Else
+     - Loops
+     - Arrays
+     - Strings
+     - Patterns
+     - Misc
