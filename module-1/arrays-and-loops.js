@@ -82,7 +82,7 @@ function smallestNumberInArray(arr) {
 console.log(smallestNumberInArray(arr2));
 
 // Write a function to find the second largest number in an array
-const arr3 = [1, 2, 3, 4, 15, 20, 23, 25];
+const arr3 = [1, 2, 3, 4, 15, 20, 23, 25, 25];
 let firstLargest = -Infinity;
 let secondLargest = -Infinity;
 
@@ -91,8 +91,8 @@ function findSecondLargestNumberInArray(arr) {
     if (arr[i] > firstLargest) {
       secondLargest = firstLargest;
       firstLargest = arr[i];
-    } else if (a[i] > secondLargest) {
-      secondLargest = a[i];
+    } else if (arr[i] > secondLargest && arr[i] != firstLargest) {
+      secondLargest = arr[i];
     }
   }
   return secondLargest;
