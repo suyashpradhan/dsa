@@ -98,3 +98,28 @@ for (i = 0; i < n; i++) {
   }
   console.log(row);
 }
+
+console.log("--------------------");
+
+// Pattern 7
+// 1
+// 1 0
+// 1 0 1
+// 1 0 1 0
+// 1 0 1 0 1
+
+let number = 5;
+for (i = 0; i < number; i++) {
+  let row = "";
+  let switchNumber = 1;
+  for (j = 0; j <= i; j++) {
+    row = row + switchNumber;
+
+    if (switchNumber == 1) {
+      switchNumber = 0;
+    } else {
+      switchNumber = 1;
+    }
+  }
+  console.log(row);
+}
